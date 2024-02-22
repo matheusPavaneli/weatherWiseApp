@@ -15,6 +15,7 @@ const WeatherChart = ({
       if (ctx) {
         const chart = createChart(ctx, weatherData);
         return () => {
+          if (!chart) return;
           chart.destroy();
         };
       }

@@ -1,5 +1,5 @@
 const globalConfig = {
-  BASE_URL: 'http://localhost:3001',
+  BASE_URL: 'https://nice-ruby-colt-tux.cyclic.app',
 };
 
 export default globalConfig;

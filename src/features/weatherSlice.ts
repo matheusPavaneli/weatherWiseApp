@@ -19,7 +19,7 @@ export const WeatherSlice = createSlice({
   initialState,
   reducers: {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    weatherDataRequest: (state, action: PayloadAction<IReceivedPayload>) => {
+    weatherDataRequest: (state, _action: PayloadAction<IReceivedPayload>) => {
       state.isLoading = true;
     },
     weatherDataFailure: (state) => {
