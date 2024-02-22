@@ -1,0 +1,1 @@
+A weather application in which it receives the name of the city, returning meteorological data and an image of the searched city.
