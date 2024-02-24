@@ -136,6 +136,21 @@ function Home() {
                 <p>No forecast data available</p>
               </div>
             )}
+            <div className="flex flex-row justify-between text-sm px-4 pt-4">
+              {weatherState.forecastWeatherData?.map((day) => (
+                <div key={day.dt} className="flex flex-col items-center">
+                  <span className="dark:text-white">{day.dt}</span>
+                  <img
+                    src={day.icon}
+                    alt=""
+                    className='"text-center w-12 h-12 pt-2 text-primary-200"'
+                  />
+                  <span className="dark:text-white text-xl font-semibold text-center">
+                    {day.temp}°
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </section>
